@@ -4,24 +4,25 @@ body {
   min-height: 100vh;
   font-family: "Josefin Sans", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-size: 3rem;
+  font-size: 1rem;
+  background: url(./assets/img/bg.jpg) center/cover fixed;
+  color: whitesmoke;
 }
-#target {
-  display: flex;
-  margin-left: 1rem;
+.target {
   position: relative;
 }
-#target::after {
+.target::after {
   content: "";
   position: absolute;
-  height: 3rem;
+  height: 2rem;
   width: 5px;
-  background: black;
+  background: rgb(255, 255, 255);
   top: 0;
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   right: -5px;
   animation: anim 0.8s linear infinite;
 }
