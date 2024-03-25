@@ -115,7 +115,7 @@ form.addEventListener("submit", (e) => {
             email,
             password,
         }
-
+        //------_
 
         inputs.forEach((input) => {
             input.value = "";
